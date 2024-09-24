@@ -12,7 +12,16 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jest-junit": "^16.0.0",
     "jsdom": "^25.0.1",
     "util": "^0.12.5"
-  }
+  },
+  "jest": {
+  "testEnvironment": "jsdom",
+  "reporters": [
+    "default",
+    [ "jest-junit", { "outputDirectory": "./test-reports", "outputName": "jest-junit.xml" } ]
+  ]
+}
+
 }

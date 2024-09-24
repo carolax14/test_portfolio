@@ -9,6 +9,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         alert('Veuillez remplir tous les champs');
     } else {
         alert(`Merci ${name}, votre message a été envoyé !`);
-        document.getElementById('contactForm').reset(); // Réinitialise le formulaire
+        document.getElementById('contactForm').reset();
     }
 });
